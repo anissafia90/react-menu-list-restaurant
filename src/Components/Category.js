@@ -4,7 +4,7 @@ import { Col, Row } from "react-bootstrap";
 const Category = ({ categories, filterItems }) => {
   return (
     <Row className="my-2">
-      <Col sm="12" className="d-flex justify-content-center">
+      <Col sm="12" className="d-flex justify-content-center mobile">
         {categories.map((category, index) => {
           return (
             <button

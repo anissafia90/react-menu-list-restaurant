@@ -4,11 +4,11 @@ import { Col, Row, Card } from "react-bootstrap";
 const Item = ({ items }) => {
   return (
     <Row>
-      <Col sm="12" className="mb-3">
+      <Col md="12" className="mb-3">
         {items.map((menuItem) => {
           const { id, title, img, price, desc } = menuItem;
           return (
-            <Card key={id} className="d-flex flex-row menu-item my-3">
+            <Card key={id} className="d-flex  menu-item my-3 mobile">
               <Card.Img src={img} alt={title} className="photo" />
               <Card.Body>
                 <Card.Title className="d-flex justify-content-between">

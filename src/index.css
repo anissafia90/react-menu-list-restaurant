@@ -63,8 +63,14 @@ body {
 .photo {
   object-fit: cover;
   height: 200px;
-  width: 100%;
+  width: auto;
   border: 0.25rem solid #c59d5f;
   border-radius: 0.25rem;
   display: block;
+}
+
+@media only screen and (max-width: 491px) {
+  .mobile {
+    flex-direction: column;
+  }
 }
